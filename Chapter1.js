@@ -1,3 +1,5 @@
+//Permitive vs Refrence 
+
 //the two types
 
 //1-primitive => Stored as simple data {boolean , number , string , null , undefined}
@@ -41,3 +43,21 @@ array.push(12345);
 var method = "push"
 array[method](12345);
 console.log(array)
+
+
+
+/*
+ JS is a Garbage Collecting language .
+ What I mean about that is memory management is automated 
+ it finds garbage data in either stack or the heap 
+ 
+ $The stack is a region of RAM that gets created 
+ on every thread that your application is running on.
+
+ $The heap is a memory store also in RAM that allows for dynamic 
+ memory allocation, and does not work on a stack-like basis; 
+ this means there is no notion of pushing and popping variables, 
+ and it’s more just a hub of storage for you to define your variables.
+
+ NOTE Dynamic memory allocation refers to managing system memory at runtime.
+ */

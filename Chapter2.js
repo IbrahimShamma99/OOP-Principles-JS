@@ -21,17 +21,16 @@ console.log(reflect.length); // outputs 3 due to length of argument
 
 function sayNameForAll(label) {
     console.log(label + ":" + this.name);
-}
+    }
 
 person = {
     name:"ibrahim"
 }
 
-sayNameForAll.call(person,"Hello") //Constructor Stealing 
-/**
- * arg1 => Constructor
- * arg2 => parameter
+sayNameForAll.call(person,"Hello") //NOTE  Constructor Stealing
+/**ANCHOR 
+ * arg1 => person
+ * arg2 => parameter for sayNameForAll
  */
-//NOTE JS treats parameters as an array 
 var sayNameForAll1 = sayNameForAll.bind(person)
 sayNameForAll1("HI")

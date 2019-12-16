@@ -115,21 +115,8 @@ console.log(square instanceof Square); //true
 console.log(square instanceof Rectangle);//true
 console.log(square instanceof Object);
 
-/**
- * Let's describe what we have seen from the code above
- * we created Rectange constructor which inherits built in prototypes
- * we also created Rectange special prototypes (Tostring being overwritten & getArea)
- * then we created Square Constructor that inherits from Rectangle Prototype 
- * NOTE : Rectangle Prototype inherits built in protypes in JS
- */
-
-/**
- * Always make sure that you overwrite 
- * the prototype before
- * adding properties to it,
- * or you will lose the added methods 
- * when the overwrite happens.
- */
 
 
-// NOTE JavaScript supports inheritance through prototype chaining.
+
+
+

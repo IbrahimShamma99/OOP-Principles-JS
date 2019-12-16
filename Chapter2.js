@@ -27,10 +27,6 @@ person = {
     name:"ibrahim"
 }
 
-sayNameForAll.call(person,"Hello") //NOTE  Constructor Stealing
-/**ANCHOR 
- * arg1 => person
- * arg2 => parameter for sayNameForAll
- */
+sayNameForAll.call(person,"Hello")
 var sayNameForAll1 = sayNameForAll.bind(person)
 sayNameForAll1("HI")
